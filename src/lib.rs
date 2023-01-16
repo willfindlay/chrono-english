@@ -113,7 +113,6 @@ where
     if tspec.offset.is_some() {
         //   return DateTime::fix()::parse_from_rfc3339(s);
     }
-    println!("{s}: {tspec:?}");
     let date_time = if let Some(dspec) = d.date {
         dspec
             .to_date_time(now, tspec, dp.american)
